@@ -1,12 +1,171 @@
+<!-- index.html -->
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoAgro 2026</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
-    <title>Projeto Agrinho 2026</title>
+
+    <!-- Ícones -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-<script src="main.js"></script>    
+
+    <!-- HEADER -->
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">🌱 EcoAgro 2026</h1>
+
+            <ul class="menu">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sustentabilidade">Sustentabilidade</a></li>
+                <li><a href="#tecnologia">Tecnologia</a></li>
+                <li><a href="#impactos">Impactos</a></li>
+            </ul>
+
+            <button id="darkModeBtn">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+        </nav>
+
+        <!-- HERO -->
+        <section class="hero" id="inicio">
+            <div class="hero-text">
+                <h2>Agro forte, futuro sustentável</h2>
+
+                <p>
+                    Tecnologia, inovação e sustentabilidade trabalhando juntas
+                    para transformar o campo e preservar o meio ambiente.
+                </p>
+
+                <button id="saibaMais">Saiba Mais</button>
+            </div>
+        </section>
+    </header>
+
+    <!-- SUSTENTABILIDADE -->
+    <section class="cards-section" id="sustentabilidade">
+
+        <h2>Sustentabilidade no Agro</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <i class="fa-solid fa-water"></i>
+                <h3>Uso Consciente da Água</h3>
+                <p>
+                    Sistemas inteligentes ajudam produtores a economizar água
+                    e aumentar a produtividade.
+                </p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-leaf"></i>
+                <h3>Preservação Ambiental</h3>
+                <p>
+                    O equilíbrio entre produção agrícola e natureza garante
+                    um futuro mais sustentável.
+                </p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-recycle"></i>
+                <h3>Reciclagem</h3>
+                <p>
+                    A reutilização de materiais reduz impactos ambientais
+                    no campo e na cidade.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- TECNOLOGIA -->
+    <section class="tech-section" id="tecnologia">
+
+        <div class="tech-text">
+            <h2>Tecnologia no Campo</h2>
+
+            <p>
+                Drones, sensores e inteligência artificial ajudam produtores
+                a monitorar plantações, prever o clima e melhorar a produção.
+            </p>
+
+            <ul>
+                <li>🚜 Automação agrícola</li>
+                <li>📡 Sensores inteligentes</li>
+                <li>🤖 Robótica no campo</li>
+                <li>🌦️ Monitoramento climático</li>
+            </ul>
+        </div>
+
+        <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=1200&auto=format&fit=crop"
+        alt="Tecnologia no campo">
+
+    </section>
+
+    <!-- IMPACTOS -->
+    <section class="impact-section" id="impactos">
+
+        <h2>Impactos Positivos</h2>
+
+        <div class="impact-grid">
+
+            <div class="impact-box">
+                <h3>🌍 Meio Ambiente</h3>
+                <p>Menos desperdício e maior preservação da natureza.</p>
+            </div>
+
+            <div class="impact-box">
+                <h3>🏙️ Cidades</h3>
+                <p>Mais alimentos saudáveis e desenvolvimento sustentável.</p>
+            </div>
+
+            <div class="impact-box">
+                <h3>👨‍🌾 Produtores</h3>
+                <p>Maior produtividade com uso consciente dos recursos.</p>
+            </div>
+
+            <div class="impact-box">
+                <h3>💰 Economia</h3>
+                <p>Fortalecimento da agricultura e geração de empregos.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- QUIZ -->
+    <section class="quiz-section">
+
+        <h2>Quiz Sustentável</h2>
+
+        <p>
+            Qual dessas tecnologias ajuda na agricultura sustentável?
+        </p>
+
+        <div class="quiz-buttons">
+            <button class="answer">Drones agrícolas</button>
+            <button class="answer">Queimadas</button>
+            <button class="answer">Desmatamento</button>
+        </div>
+
+        <p id="quizResult"></p>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>
+            Projeto Agrinho 2026 | Desenvolvido com HTML, CSS e JavaScript
+        </p>
+    </footer>
+
+    <!-- JS -->
+    <script src="main.js"></script>
+
 </body>
 </html>
